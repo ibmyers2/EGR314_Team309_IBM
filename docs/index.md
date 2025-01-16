@@ -5,7 +5,6 @@ tags:
 - tag2
 ---
 ## Title
-
 STEM Demonstration
 
 Team 309
