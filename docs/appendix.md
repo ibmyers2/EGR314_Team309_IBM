@@ -2,11 +2,7 @@
 title: Appendix
 ---
 
-## Appendix A
-
-text
-
-## Appendix B
+## Appendix A - Team Organization
 
 text
 
