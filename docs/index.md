@@ -4,12 +4,15 @@ tags:
 - tag1
 - tag2
 ---
+
 ## Title
+
 STEM Demonstration
 
 Team 309
 
 Members
+
 - Baron Guido
 - Bruce Myers
 - Aadish Lele
