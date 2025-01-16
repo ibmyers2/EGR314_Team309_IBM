@@ -1,12 +1,12 @@
 ---
 title: Team Organization
 ---
-# Team Charter
+## Team Charter
 "Charter"
 
 text
 
-# Product Mission Statement
+## Product Mission Statement
 "Statement"
 
 text
