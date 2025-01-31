@@ -1,0 +1,13 @@
+title: Individual Datasheet
+---
+
+## Individual Datasheet
+## Block Diagram
+
+The Following Datasheet includes:
+-ESP32 Microcontroller
+-Switching Voltage Regulator (3.3V)
+-Pushbutton
+-OLED Screen
+-9V 1A Battery Power Supply
+
