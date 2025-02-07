@@ -607,23 +607,98 @@
 
 <h2 id="components">Components</h2>
 <p>-ESP32 Microcontroller</p>
-<p>-Voltage Regulator (3.3V)
--Pushbutton</p>
+<p>-Voltage Regulator (3.3V)</p>
+<p>-Pushbutton</p>
 <p>-OLED Screen</p>
 <p>-9V 1A Battery Power Supply</p>
 <p>Block Diagram:</p>
 <p><a class="glightbox" href="https://github.com/user-attachments/assets/3f3b6a4d-3d0d-42b7-96c4-5cf76b788ec1" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://github.com/user-attachments/assets/3f3b6a4d-3d0d-42b7-96c4-5cf76b788ec1" /></a></p>
 <h2 id="component-selection">Component Selection</h2>
 <p>OLED Screen:</p>
-<p>Option 1: AOM12864A0-1.54WW</p>
-<p><a class="glightbox" href="https://github.com/user-attachments/assets/706e427e-557f-4cc8-b491-9308bc0a0bee" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://github.com/user-attachments/assets/706e427e-557f-4cc8-b491-9308bc0a0bee" /></a></p>
-<p>Pros: </p>
-<p>-$17.60</p>
-<p>-I2C Compatible communication</p>
-<p>-Lightweight, 1.5-inch screen size</p>
-<p>-Max 45 mA current</p>
-<p>Cons:</p>
-<p>-15V required for display</p>
+<table>
+<thead>
+<tr>
+<th>Potential Solution</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><br>AOM12864A0-1.54WW<br><a href="https://www.digikey.com/en/products/detail/orient-display/AOM12864A0-1-54WW/22531841">Digikey Link</a><br><a class="glightbox" href="https://github.com/user-attachments/assets/706e427e-557f-4cc8-b491-9308bc0a0bee" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://github.com/user-attachments/assets/706e427e-557f-4cc8-b491-9308bc0a0bee" /></a></td>
+<td>-$17.60<br>-I2C Compatible communication<br>-Lightweight, 1.5-inch screen size<br>-Max 45 mA current</td>
+<td>-15V required for display</td>
+</tr>
+<tr>
+<td>NHD-1.8-160128UBC3<br><a href="https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-1-8-160128UBC3/23334148">Digikey Link</a><br><a class="glightbox" href="https://github.com/user-attachments/assets/69c1b4db-8b82-407b-85b5-7c32fe665202" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://github.com/user-attachments/assets/69c1b4db-8b82-407b-85b5-7c32fe665202" /></a></td>
+<td>-3.3V max power<br>-Lightweight, 1.8 inch screen size</td>
+<td>-200-250 mA current<br>-$25.91<br>-Not I2C Compattable</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>3.3V Voltage Regulator:</p>
+<table>
+<thead>
+<tr>
+<th>Potential Solution</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LMR50410Y3FQDBVRQ1<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/LMR50410Y3FQDBVRQ1/13562985">Digikey Link</a><br><a class="glightbox" href="https://github.com/user-attachments/assets/15f5f066-986a-48c2-af60-6b1341b0c69d" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://github.com/user-attachments/assets/15f5f066-986a-48c2-af60-6b1341b0c69d" /></a></td>
+<td>-Smaller in size<br>-Less pins<br>-38 V Max Input<br>-1A output<br>-$1.47</td>
+<td>-Closer pins, may make soldering more difficult</td>
+</tr>
+<tr>
+<td>LM2575-3.3WU-TR<br><a href="https://www.digikey.com/en/products/detail/microchip-technology/LM2575-3-3WU-TR/1027646">Digikey Link</a><br><a class="glightbox" href="https://github.com/user-attachments/assets/ae5945d1-fce3-4625-ad35-fdb6e194ff74" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://github.com/user-attachments/assets/ae5945d1-fce3-4625-ad35-fdb6e194ff74" /></a></td>
+<td>-$1.75<br>-40V Input<br>-1A Output<br>-All pins on 1 side, easier to design for PCB</td>
+<td>-Closer pins, may be difficult to solder</td>
+</tr>
+<tr>
+<td>LM2675MX-3.3/NOPB<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2675MX-3-3-NOPB/366907">Digikey Link</a><br><a class="glightbox" href="https://github.com/user-attachments/assets/dfdbf7d2-0463-4921-9ae8-ce323a9c8bc2" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://github.com/user-attachments/assets/dfdbf7d2-0463-4921-9ae8-ce323a9c8bc2" /></a></td>
+<td>-45V Input<br>-1A Output<br>-Easier to solder</td>
+<td>-$4.36<br>-More pins</td>
+</tr>
+</tbody>
+</table>
+<p>Optimal Solution: LM2675MX-3.3/NOPB</p>
+<p>Rationale: While more expensive, this voltage regulator will be easier to solder than the other much smaller components with more difficult pins. This will also allow for more room for traces on the PCB. It has a well-within-range voltage requirement and enough amperage for the system.</p>
+<p>Power Supply:</p>
+<table>
+<thead>
+<tr>
+<th>Potential Solution</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WR9HD1333CCP-F(R6B)<br><a href="https://www.digikey.com/en/products/detail/globtek-inc/WR9HD1333CCP-F(R6B)/13245472?gclsrc=aw.ds&amp;&amp;utm_adgroup=General&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=PMax%20Shopping_Product_Zombie%20SKUs&amp;utm_term=&amp;utm_content=General&amp;utm_id=go_cmp-17815035045_adg-_ad-__dev-c_ext-_prd-13245472_sig-CjwKCAiA2JG9BhAuEiwAH_zf3iB5fHK3lgCYxPQfWTUMx6az-ZwQjhctqcc9AtKmA3itkMB3NoGBfxoC30cQAvD_BwE&amp;gad_source=1&amp;gclid=CjwKCAiA2JG9BhAuEiwAH_zf3iB5fHK3lgCYxPQfWTUMx6az-ZwQjhctqcc9AtKmA3itkMB3NoGBfxoC30cQAvD_BwE&amp;gclsrc=aw.ds">Digikey Link</a><br><a class="glightbox" href="https://github.com/user-attachments/assets/1f13eba8-3f1b-40f7-a6e3-9435a75f3d95" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://github.com/user-attachments/assets/1f13eba8-3f1b-40f7-a6e3-9435a75f3d95" /></a></td>
+<td>-$3.94<br>-9V Output<br>-1.33 A Output<br>-Barrel Jack cord</td>
+<td>-Wall-connected<br>-Cord must reach into subsystem to power</td>
+</tr>
+<tr>
+<td>1300mAh High Capacity Lithium-ion Long Lasting 9 Volt Batteries<br><a href="https://www.amazon.com/PAISUE-Rechargeable-Lithium-ion-Multimeter-Microphone/dp/B0B248DSFG?source=ps-sl-shoppingads-lpcontext&amp;ref_=fplfs&amp;smid=A2WEVNKRB72JGE&amp;gQT=1&amp;th=1">Amazon Link</a><br><a class="glightbox" href="https://github.com/user-attachments/assets/1379a413-64ab-420f-8771-392321a2b992" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://github.com/user-attachments/assets/1379a413-64ab-420f-8771-392321a2b992" /></a></td>
+<td>-Portable<br>-9V Output<br>-1.3A Output<br>-Can be incorporated into the system for no outer cords</td>
+<td>-$11.98 (for 2)<br>-Ships quickly through Amazon<br>-No build-in connector</td>
+</tr>
+<tr>
+<td>9 Volt DC, 1 Amp Power Adapter with 5.5mm Barrel Jack, 2.1mm Inner Diameter<br><a href="https://www.elexp.com/products/16d9-1wall-adaptor-9v-1a-plug-2-1mm?variant=42666546102500&amp;currency=USD&amp;utm_source=google&amp;utm_medium=organic&amp;utm_campaign=Google%20Shopping&amp;utm_content=9%20Volt%20DC%2C%201%20Amp%20Power%20Adapter%20with%205.5mm%20Barrel%20Jack%2C%202.1mm%20Inner%20Diameter%20(Center%20Positive)&amp;gad_source=1&amp;gclid=CjwKCAiA2JG9BhAuEiwAH_zf3kCQT20F8pNUSFtNsfVa0HCrzU7W_4cg6pAwINuGU1AnPQ9iI671IBoC5IsQAvD_BwE">Elexp Link</a><br><a class="glightbox" href="https://github.com/user-attachments/assets/5c68a02f-8b00-4066-8371-12162a3a0a00" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://github.com/user-attachments/assets/5c68a02f-8b00-4066-8371-12162a3a0a00" /></a></td>
+<td>-Barrel Jack Connector<br>-9V Output<br>-1.3A Output</td>
+<td>-$5.95<br>-Not shipped through Digikey/Amazon<br>-Wall Connected<br>-Cord must reach into subsystem to power</td>
+</tr>
+</tbody>
+</table>
+<p>Optimal Solution: 1300mAh High Capacity Lithium-ion Long Lasting 9 Volt Batteries</p>
+<p>Rationale: The Portable battery that is shown would be the best option of the three because our presentation for the Innovation showcase will be made significantly smoother with the use of a portable power supply. We will not have to worry about cords outside of the system, as we can make a shell and have the battery and barrel jack adapter built within the system. We can also purchase only a few packs of these and can recharge them for multiple uses, which is better than buying many batteries.</p>
 
 
 
