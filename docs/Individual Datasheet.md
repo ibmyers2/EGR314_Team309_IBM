@@ -48,3 +48,55 @@ Optimal Solution: 1300mAh High Capacity Lithium-ion Long Lasting 9 Volt Batterie
 
 Rationale: The Portable battery that is shown would be the best option of the three because our presentation for the Innovation showcase will be made significantly smoother with the use of a portable power supply. We will not have to worry about cords outside of the system, as we can make a shell and have the battery and barrel jack adapter built within the system. We can also purchase only a few packs of these and can recharge them for multiple uses, which is better than buying many batteries.
 
+Microcontroller Selection
+
+Requirements:
+-1 I2C communication pin
+-2 UART communication pins
+-Multiple GPIO pins
+
+First Microcontroller consideration: ESP32-S3-WROOM-1-N4
+
+| ESP Info                                | Answer                                                                                                                                                                                                 |
+|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Model                                   | ESP32-S3-WROOM-1-N4                                                                                                                                                                                    |
+| Product Page URL                        | [Digikey Link](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639)                                                                                              |
+| ESP32-S3-WROOM-1-N4 Datasheet URL       | [ESP32-S3-WROOM-1-N4 Datasheet Link](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)                                                           |
+| ESP32 S3 Datasheet URL                  | [ESP32 S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)                                                                                            |
+| ESP32 S3 Technical Reference Manual URL | [ESP32 S3 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-s3_technical_reference_manual_en.pdf)                                                          |
+| Vendor Link                             | [Espressif Systems Link](https://www.digikey.com/en/supplier-centers/espressif-systems)                                                                                                                |
+| Code Examples                           | [Code Examples](https://github.com/espressif/arduino-esp32/blob/master/libraries/WiFi/examples/SimpleWiFiServer/SimpleWiFiServer.ino)                                                                  |
+| External resources URL(s)               | [Getting started with ESP32](https://www.youtube.com/watch?v=UuxBfKA3U5M&pp=ygUOZXNwMzIgdHV0b3JpYWw%3D)<br>[ESP32 Overview](https://www.youtube.com/watch?v=QUNKY87Da7A&pp=ygUOZXNwMzIgdHV0b3JpYWw%3D) |
+| Unit Cost                               | $2.95                                                                                                                                                                                                  |
+| Absolute Maximum Current for entire IC  | 0.5A                                                                                                                                                                                                   |
+| Supply Voltage Range                    | 3.0-3.6V                                                                                                                                                                                               |
+| Maximum GPIO current (per pin)          | 10nA                                                                                                                                                                                                   |
+| Support External Interrupts?            | Yes                                                                                                                                                                                                    |
+| Require Programming Hardware, Cost, URL | None                                                                                                                                                                                                   |
+
+Highlights: The ESP32 will be able to do more than enough for the system that needs to be created. There is an array of GPIO pins that also work as I2C pins, so there is little need to worry about the OLED’s positioning. These GPIO pins also work well with the pushbuttons that may need to be used. The required current is also half of what will be accessible, which leaves another 0.5A for the other components. This microcontroller also has the proper UART communication that is needed for using Wifi to establish communication between the human interface and other systems.
+
+Pin Info:
+
+![Image](https://github.com/user-attachments/assets/f78ca74e-7bdd-41c8-8a52-8aa312c4e7d6)
+![Image](https://github.com/user-attachments/assets/26f5d32e-5a77-4e69-86b7-409646a7729f)
+![Image](https://github.com/user-attachments/assets/a7af341e-1e53-413c-abfa-90c2efcc2912)
+
+Team Role:
+
+As the member of the team that is responsible for the human interface system, I will have a few primary responsibilities. The first of these is going to be making sure my system is powered. Since it will be its standalone system compared to to spinning top, which will have the actuator, sensor, etc, I will be in charge of making sure that the human interface is powered at all times. I will also be responsible for the display. This will be what allows us to have a great exhibit that can be properly interacted with by the visitors at the showcase. Finally, I will also be in charge of establishing communication between the spinning top using Wifi capabilities. This is what will allow my system to receive the speed data and possibly send out data to control the top.
+
+| Module         | # Available | Needed | Associated Pins                                                    |
+|----------------|-------------|--------|--------------------------------------------------------------------|
+| UART           | 24          | 2      | Any GPIO Pins(4-12,15-31)                                          |
+| SPI            | 24          | 0      | Any GPIO Pin(4-12,15-31)(depends on what peripheral is being used) |
+| I2C            | 24          | 1      | Any GPIO Pin(4-12,15-31)                                           |
+| GPIO           | 24          | 2      | Any GPIO Pin(4-12,15-31)                                           |
+| ADC            | 3           | 0      | 13, 14, and 18                                                     |
+| LED PWM        | 24          | 0      | Any GPIO Pin(4-12,15-31)                                           |
+| Motor PWM      | 24          | 0      | Any GPIO Pin(4-12,15-31)                                           |
+| USB Programmer | 2           | 1      | 13 and 14 (GPIO19 and 20)                                          |
+
+Conclusion:
+
+Overall, the ESP32 works wonderfully as a microcontroller for my system. It fulfills the project requirement and has many functions that work well with my personal goals and ideas. It has all the compatible systems needed for my peripherals, including I2C, UART, and GPIO pins. It also has many of these pins available, so having to worry about where on the board to place components should not be too much of a problem. The ESP32 also has a low current requirement and only needs a voltage regulator to be powered. It also comes with an antenna, so no additional hardware will be required.
