@@ -1,13 +1,13 @@
 ---
-title: Main
+title: My HMI Webpage
 tags:
 - tag1
 - tag2
 ---
 
-## Title
+## Team Introduction
 
-STEM Demonstration
+Project: STEM Demonstration
 
 Team 309
 
@@ -18,7 +18,7 @@ Members
 - Aadish Lele
 - Shaurya Manglik
 
-Preperation Date: January 16
+Preparation Date: January 16
 
 Spring 2025
 
