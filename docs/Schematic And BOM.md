@@ -1,6 +1,6 @@
 Human Interface Schematic
 
-![Image](https://github.com/ibmyers2/EGR314_Team309_IBM/issues/13#issue-2867937231)
+![Image](https://github.com/user-attachments/assets/022fcd61-9c8a-4d45-aeb1-e553ebc384b9)
 
 [PDF](https://github.com/user-attachments/files/19020329/UpdatedEGR314Schematic.pdf)
 
