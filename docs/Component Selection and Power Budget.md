@@ -89,3 +89,7 @@ As the member of the team that is responsible for the human interface system, I 
 Conclusion:
 
 Overall, the ESP32 works wonderfully as a microcontroller for my system. It fulfills the project requirement and has many functions that work well with my goals and ideas. It has all the compatible systems needed for my peripherals, including I2C, UART, and GPIO pins. It also has many of these pins available, so worrying about where on the board to place components should not be too much of a problem. The ESP32 also has a low current requirement and only needs a voltage regulator to be powered. It also comes with an antenna, so no additional hardware will be required.
+
+Power Budget:
+
+[Spreadsheet Link](https://github.com/ibmyers2/EGR314_Team309_IBM/raw/refs/heads/main/EGR314%20Power%20Budget%20IBM.xlsx)
