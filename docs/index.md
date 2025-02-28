@@ -11,6 +11,8 @@ Project: STEM Demonstration
 
 Team 309
 
+[Team Website](https://egr314-2025-s-309.github.io/)
+
 Members
 
 - Baron Guido
