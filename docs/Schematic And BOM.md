@@ -2,7 +2,7 @@ Human Interface Schematic
 
 ![Image](https://github.com/user-attachments/assets/022fcd61-9c8a-4d45-aeb1-e553ebc384b9)
 
-[PDF](https://github.com/user-attachments/files/19020329/UpdatedEGR314Schematic.pdf)
+[PDF](https://github.com/user-attachments/files/19023361/New_EGR314HMISchematic.pdf)
 
 [ZIP File](https://github.com/ibmyers2/EGR314_Team309_IBM/raw/refs/heads/main/EGR314HI.zip)
 
