@@ -1,6 +1,6 @@
 Human Interface Schematic
 
-![Image](https://github.com/user-attachments/assets/022fcd61-9c8a-4d45-aeb1-e553ebc384b9)
+![Image](https://github.com/user-attachments/assets/c1e4c45d-be0a-451c-bd9e-a46856bc9e6f)
 
 [PDF](https://github.com/user-attachments/files/19080059/EGR314Schem3.42.5.pdf)
 
