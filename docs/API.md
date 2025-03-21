@@ -1,6 +1,7 @@
 ##Message Type Breakdown
 
-Motor Direction(Type 1)
+Motor Direction(Type 1):
+
 | Byte #        | Byte 1     | Byte 2     | Byte 3        | Byte 4          | Byte 5      | Byte 6      | Byte 7     | Byte 8     |
 |---------------|------------|------------|---------------|-----------------|-------------|-------------|------------|------------|
 | Variable Name | MotorD_Pre | MotorD_Pre | MotorD_Sender | MotorD_Reciever | MotorD_Data | MotorD_Data | MotorD_Suf | MotorD_Suf |
@@ -9,7 +10,8 @@ Motor Direction(Type 1)
 | Maximum Value | 65535      | 65535      | 255           | 255             | 65535       | 65535       | 65535      | 65535      |
 | Example Value | 2000       | 8450       | 38            | 209             | 38920       | 2005        | 39472      | 393        |
 
-Motor Rotational Velocity(Type 3)
+Motor Rotational Velocity(Type 3):
+
 | Byte #        | Byte 1     | Byte 2     | Byte 3        | Byte 4          | Byte 5      | Byte 6      | Byte 7     | Byte 8     |
 |---------------|------------|------------|---------------|-----------------|-------------|-------------|------------|------------|
 | Variable Name | MotorV_Pre | MotorV_Pre | MotorV_Sender | MotorV_Reciever | MotorV_Data | MotorV_Data | MotorV_Suf | MotorV_Suf |
