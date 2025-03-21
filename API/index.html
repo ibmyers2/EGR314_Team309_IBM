@@ -529,22 +529,152 @@
   <h1>API</h1>
 
 <h2 id="message-type-breakdown">Message Type Breakdown</h2>
-<p>Motor Direction(Type 1)
-| Byte #        | Byte 1     | Byte 2     | Byte 3        | Byte 4          | Byte 5      | Byte 6      | Byte 7     | Byte 8     |
-|---------------|------------|------------|---------------|-----------------|-------------|-------------|------------|------------|
-| Variable Name | MotorD_Pre | MotorD_Pre | MotorD_Sender | MotorD_Reciever | MotorD_Data | MotorD_Data | MotorD_Suf | MotorD_Suf |
-| Variable Type | uint16_t   | uint16_t   | uint_8        | uint_8          | uint16_t    | uint16_t    | uint16_t   | uint16_t   |
-| Minimum Value | 0          | 0          | 0             | 0               | 0           | 0           | 0          | 0          |
-| Maximum Value | 65535      | 65535      | 255           | 255             | 65535       | 65535       | 65535      | 65535      |
-| Example Value | 2000       | 8450       | 38            | 209             | 38920       | 2005        | 39472      | 393        |</p>
-<p>Motor Rotational Velocity(Type 3)
-| Byte #        | Byte 1     | Byte 2     | Byte 3        | Byte 4          | Byte 5      | Byte 6      | Byte 7     | Byte 8     |
-|---------------|------------|------------|---------------|-----------------|-------------|-------------|------------|------------|
-| Variable Name | MotorV_Pre | MotorV_Pre | MotorV_Sender | MotorV_Reciever | MotorV_Data | MotorV_Data | MotorV_Suf | MotorV_Suf |
-| Variable Type | uint16_t   | uint16_t   | uint_8        | uint_8          | uint16_t    | uint16_t    | uint16_t   | uint16_t   |
-| Minimum Value | 0          | 0          | 0             | 0               | 0           | 0           | 0          | 0          |
-| Maximum Value | 65535      | 65535      | 255           | 255             | 65535       | 65535       | 65535      | 65535      |
-| Example Value | 358        | 20040      | 97            | 155             | 10389       | 29876       | 394        | 63823      |</p>
+<p>Motor Direction(Type 1):</p>
+<table>
+<thead>
+<tr>
+<th>Byte #</th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+<th>Byte 3</th>
+<th>Byte 4</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
+<th>Byte 7</th>
+<th>Byte 8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>MotorD_Pre</td>
+<td>MotorD_Pre</td>
+<td>MotorD_Sender</td>
+<td>MotorD_Reciever</td>
+<td>MotorD_Data</td>
+<td>MotorD_Data</td>
+<td>MotorD_Suf</td>
+<td>MotorD_Suf</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>uint16_t</td>
+<td>uint16_t</td>
+<td>uint_8</td>
+<td>uint_8</td>
+<td>uint16_t</td>
+<td>uint16_t</td>
+<td>uint16_t</td>
+<td>uint16_t</td>
+</tr>
+<tr>
+<td>Minimum Value</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Maximum Value</td>
+<td>65535</td>
+<td>65535</td>
+<td>255</td>
+<td>255</td>
+<td>65535</td>
+<td>65535</td>
+<td>65535</td>
+<td>65535</td>
+</tr>
+<tr>
+<td>Example Value</td>
+<td>2000</td>
+<td>8450</td>
+<td>38</td>
+<td>209</td>
+<td>38920</td>
+<td>2005</td>
+<td>39472</td>
+<td>393</td>
+</tr>
+</tbody>
+</table>
+<p>Motor Rotational Velocity(Type 3):</p>
+<table>
+<thead>
+<tr>
+<th>Byte #</th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+<th>Byte 3</th>
+<th>Byte 4</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
+<th>Byte 7</th>
+<th>Byte 8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>MotorV_Pre</td>
+<td>MotorV_Pre</td>
+<td>MotorV_Sender</td>
+<td>MotorV_Reciever</td>
+<td>MotorV_Data</td>
+<td>MotorV_Data</td>
+<td>MotorV_Suf</td>
+<td>MotorV_Suf</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>uint16_t</td>
+<td>uint16_t</td>
+<td>uint_8</td>
+<td>uint_8</td>
+<td>uint16_t</td>
+<td>uint16_t</td>
+<td>uint16_t</td>
+<td>uint16_t</td>
+</tr>
+<tr>
+<td>Minimum Value</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Maximum Value</td>
+<td>65535</td>
+<td>65535</td>
+<td>255</td>
+<td>255</td>
+<td>65535</td>
+<td>65535</td>
+<td>65535</td>
+<td>65535</td>
+</tr>
+<tr>
+<td>Example Value</td>
+<td>358</td>
+<td>20040</td>
+<td>97</td>
+<td>155</td>
+<td>10389</td>
+<td>29876</td>
+<td>394</td>
+<td>63823</td>
+</tr>
+</tbody>
+</table>
 
 
 
