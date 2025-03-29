@@ -6,9 +6,9 @@ Motor Direction(Type 1):
 |---------------|------------|---------------|-----------------|-------------|-------------|
 | Variable Name | msgPref    | MotorD_Sender | MotorD_Reciever | MotorD_Data | msgSuf      |
 | Variable Type | uint16_t   | uint_8        | uint_8          | uint16_t    | uint16_t    |
-| Minimum Value | 0          | 0             | 0               | 0           | 0           |
-| Maximum Value | 65535      | 255           | 255             | 65535       | 65535       |
-| Example Value | 2000       | 38            | 209             | 38920       | 2005        |
+| Minimum Value | AZ         | M             | A               | 0x0040      | YB          |
+| Maximum Value | AZ         | M             | A               | 0x0041      | YB          |
+| Example Value | AZ         | M             | A               | 0x0040      | YB          |
 
 Motor Rotational Velocity(Type 3):
 
@@ -16,9 +16,9 @@ Motor Rotational Velocity(Type 3):
 |---------------|------------|---------------|-----------------|-------------|-------------|
 | Variable Name | msgPref    | MotorV_Sender | MotorV_Reciever | MotorV_Data | msgSuf      |
 | Variable Type | uint16_t   | uint_8        | uint_8          | uint16_t    | uint16_t    |
-| Minimum Value | 0          | 0             | 0               | 0           | 0           |
-| Maximum Value | 65535      | 255           | 255             | 65535       | 65535       |
-| Example Value | 2000       | 38            | 209             | 38920       | 2005        |
+| Minimum Value | AZ         | S             | M               | 0           | YB          |
+| Maximum Value | AZ         | S             | M               | 65535       | YB          |
+| Example Value | AZ         | S             | M               | 38920       | YB          |
 
 Team IDs:
 
