@@ -9,16 +9,14 @@ tags:
 
 Project: STEM Demonstration
 
-Team 309
+Team 309B
 
-[Team Website](https://egr314-2025-s-309.github.io/)
+[Team Website](https://egr314-2025-s-309b.github.io/)
 
 Members
 
 - Baron Guido
 - Bruce Myers
-- Aadish Lele
-- Shaurya Manglik
 
 Preparation Date: January 16
 
