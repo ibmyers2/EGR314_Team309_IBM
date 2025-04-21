@@ -529,7 +529,7 @@
   <h1>API</h1>
 
 <h2 id="message-type-breakdown">Message Type Breakdown</h2>
-<p>Motor Direction(Type 1):</p>
+<p>Toggle Motor(Type 1):</p>
 <table>
 <thead>
 <tr>
@@ -547,7 +547,7 @@
 <td>msgPref</td>
 <td>MotorD_Sender</td>
 <td>MotorD_Reciever</td>
-<td>MotorD_Data</td>
+<td>Motor_Data</td>
 <td>msgSuf</td>
 </tr>
 <tr>
@@ -562,7 +562,7 @@
 <td>Minimum Value</td>
 <td>AZ</td>
 <td>M</td>
-<td>A</td>
+<td>B</td>
 <td>0x0040</td>
 <td>YB</td>
 </tr>
@@ -570,7 +570,7 @@
 <td>Maximum Value</td>
 <td>AZ</td>
 <td>M</td>
-<td>A</td>
+<td>B</td>
 <td>0x0041</td>
 <td>YB</td>
 </tr>
@@ -578,63 +578,8 @@
 <td>Example Value</td>
 <td>AZ</td>
 <td>M</td>
-<td>A</td>
+<td>B</td>
 <td>0x0040</td>
-<td>YB</td>
-</tr>
-</tbody>
-</table>
-<p>Motor Rotational Velocity(Type 3):</p>
-<table>
-<thead>
-<tr>
-<th>Byte #</th>
-<th>Byte 1-2</th>
-<th>Byte 3</th>
-<th>Byte 4</th>
-<th>Byte 5-6</th>
-<th>Byte 7-8</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Variable Name</td>
-<td>msgPref</td>
-<td>MotorV_Sender</td>
-<td>MotorV_Reciever</td>
-<td>MotorV_Data</td>
-<td>msgSuf</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>uint16_t</td>
-<td>uint_8</td>
-<td>uint_8</td>
-<td>uint16_t</td>
-<td>uint16_t</td>
-</tr>
-<tr>
-<td>Minimum Value</td>
-<td>AZ</td>
-<td>S</td>
-<td>M</td>
-<td>0</td>
-<td>YB</td>
-</tr>
-<tr>
-<td>Maximum Value</td>
-<td>AZ</td>
-<td>S</td>
-<td>M</td>
-<td>65535</td>
-<td>YB</td>
-</tr>
-<tr>
-<td>Example Value</td>
-<td>AZ</td>
-<td>S</td>
-<td>M</td>
-<td>38920</td>
 <td>YB</td>
 </tr>
 </tbody>
@@ -655,18 +600,6 @@
 <tr>
 <td>Baron Guido</td>
 <td>B</td>
-</tr>
-<tr>
-<td>Aadish Lele</td>
-<td>A</td>
-</tr>
-<tr>
-<td>Shaurya Manglik</td>
-<td>S</td>
-</tr>
-<tr>
-<td>Broadcast Message</td>
-<td>X</td>
 </tr>
 </tbody>
 </table>
