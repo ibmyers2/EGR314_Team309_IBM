@@ -90,9 +90,11 @@ Conclusion:
 
 Overall, the ESP32 works wonderfully as a microcontroller for my system. It fulfills the project requirement and has many functions that work well with my goals and ideas. It has all the compatible systems needed for my peripherals, including I2C, UART, and GPIO pins. It also has many of these pins available, so worrying about where on the board to place components should not be too much of a problem. The ESP32 also has a low current requirement and only needs a voltage regulator to be powered. It also comes with an antenna, so no additional hardware will be required.
 
-Power Budget:
+## Power Budget
 
 [Spreadsheet Link](https://github.com/ibmyers2/EGR314_Team309_IBM/raw/refs/heads/main/EGR314%20Power%20Budget%20IBM.xlsx)
+
+Using the power budget above, I was able to determine that I would have some freedoms with selecting a power supply. Aside from the ESP, the components needed for this project did not take up very much current. This allowed me to look at a variety of different power supplies without having to worry about current very much, and concentrate on factors like cost, reliability, size, and efficiency. Also, since the HMI is going to run independently, I do not have to worry about other systems drawing current.
 
 Major Component Selection:
 
@@ -105,4 +107,4 @@ Major Component Selection:
 
 ## Major Component Decision Making Process
 
-The ESP was a very simple decision for the microcontroller, since it had the proper I2C communication, Wifi communication, and more than enough GPIO pins. The OLED screen was a choice I made since it was one I was familiar with and would be able to properly display the required information, as well as not requiring very much current. The Power supply was selected for its cost-friendly price, as well as being reuseable and having more than enough current to supply the entire circuit. Finally, the voltage regulator was selected since it would be easier to solder, as well as meeting all other requirements for a voltage regulator.
+The ESP was a very simple decision for the microcontroller, since it had the proper I2C communication, Wifi communication, and more than enough GPIO pins. The OLED screen was a choice I made since it was one I was familiar with and would be able to properly display the required information, as well as not requiring very much current. The Power supply was selected for its cost-friendly price, as well as being reusable and having more than enough current to supply the entire circuit. Finally, the voltage regulator was selected since it would be easier to solder, as well as meet all other requirements for a voltage regulator.
