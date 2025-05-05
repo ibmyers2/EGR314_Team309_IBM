@@ -6,5 +6,9 @@
 
 [Gerber Files](https://github.com/user-attachments/files/20048113/Myers_Updated_Board.zip)
 
+![Image](https://github.com/user-attachments/assets/616fc9be-8d91-498f-8d6a-661c5ab04f68)
+
+![Image](https://github.com/user-attachments/assets/4a30c898-1568-4b90-bd71-6bcebda43b32)
+
 ## PCB Decision Making Process
-When it came to making the layout of the PCB, I wanted to make the layout fairly compact, but since the HMI would be a stand alone part of the project, I did have more freedom to make more space. Aside from ensuring that there was enough space to be able to push down on piushbutons and to solder components, I was able to make a stable board with little restriction. Aside from facing my barrel jack the wrong direction and some issues with importing the USB programmer onto the wrong layer of the board, this PCB design worked well for the project and was very neat and organized.
+When it came to making the layout of the PCB, I wanted to make the layout fairly compact, but since the HMI would be a stand-alone part of the project, I did have more freedom to make more space. Aside from ensuring that there was enough space to be able to push down on push buttons and to solder components, I was able to make a stable board with little restriction. Aside from facing my barrel jack the wrong direction and some issues with importing the USB programmer onto the wrong layer of the board, this PCB design worked well for the project and was very neat and organized.
