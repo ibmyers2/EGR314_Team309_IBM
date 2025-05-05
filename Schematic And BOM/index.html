@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bill-of-materials" class="md-skip">
+        <a href="#human-interface-schematic" class="md-skip">
           Skip to content
         </a>
       
@@ -456,8 +456,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#human-interface-schematic" class="md-nav__link">
+    Human Interface Schematic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#bill-of-materials" class="md-nav__link">
     Bill of Materials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schematic-functionality" class="md-nav__link">
+    Schematic Functionality
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schematic-decision-making-process" class="md-nav__link">
+    Schematic Decision-Making Process
   </a>
   
 </li>
@@ -495,8 +516,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#human-interface-schematic" class="md-nav__link">
+    Human Interface Schematic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#bill-of-materials" class="md-nav__link">
     Bill of Materials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schematic-functionality" class="md-nav__link">
+    Schematic Functionality
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schematic-decision-making-process" class="md-nav__link">
+    Schematic Decision-Making Process
   </a>
   
 </li>
@@ -526,7 +568,7 @@
 
   <h1>Schematic And BOM</h1>
 
-<p>Human Interface Schematic</p>
+<h2 id="human-interface-schematic">Human Interface Schematic</h2>
 <p><a class="glightbox" href="https://github.com/user-attachments/assets/0f763069-f66c-4e2b-b766-f87e5867bc81" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://github.com/user-attachments/assets/0f763069-f66c-4e2b-b766-f87e5867bc81" /></a></p>
 <p><a href="https://github.com/user-attachments/files/20042755/EGR314_Final_Schematic.pdf">PDF</a></p>
 <p><a href="https://github.com/user-attachments/files/20042926/EGR314_HMI.zip">ZIP File</a></p>
@@ -894,6 +936,10 @@
 </tr>
 </tbody>
 </table>
+<h2 id="schematic-functionality">Schematic Functionality</h2>
+<p>The schematic above has all the required components and connections to have a fully operational human-machine interface. A jumper cable between the selected power supply and the voltage regulator allows for choices in what is powering the system. The voltage regulator is wired properly according to the datasheet. The OLED screen has the proper pull-up resistor to allow for steady communication to the ESP. The pushbuttons and HMI pushbuttons are wired properly and hooked up to the proper pins on the ESP. The USB programmer is wired properly and also connected to the required pins on the ESP. Finally, two debug LEDs can help with troubleshooting for the project, and there are additional header pins that can be used in case other pins on the ESP are not functioning as expected.</p>
+<h2 id="schematic-decision-making-process">Schematic Decision-Making Process</h2>
+<p>For this section, picking out components was pretty simple since many of the major components were already picked out in the component selection stage, and minor components could be selected by considering pad size and cost. When making the schematic, it was important to make sure to go back and confirm all the wiring was correct, whether that was reviewing data sheets or finding proper wiring for pushbuttons. Overall, creating this schematic to fit the HMI needs took time, but the final project had many important failsafes and key components that allowed for flexibility when working through the assembly and testing process.</p>
 
 
 
