@@ -1,4 +1,4 @@
-##Component Selection
+## Component Selection
 
 OLED Screen:
 
@@ -73,7 +73,7 @@ Pin Info:
 
 Team Role:
 
-As the member of the team that is responsible for the human interface system, I will have a few primary responsibilities. The first of these is going to be making sure my system is powered. Since it will be its standalone system compared to to spinning top, which will have the actuator, sensor, etc, I will be in charge of making sure that the human interface is powered at all times. I will also be responsible for the display. This will be what allows us to have a great exhibit that can be properly interacted with by the visitors at the showcase. Finally, I will also be in charge of establishing communication between the spinning top using Wifi capabilities. This is what will allow my system to receive the speed data and possibly send out data to control the top.
+As the member of the team that is responsible for the human interface system, I will have a few primary responsibilities. The first of these is going to be making sure my system is powered. Since it will be its standalone system compared to to spinning top, which will have the actuator, sensor, etc, I will be in charge of making sure that the human interface is powered at all times. I will also be responsible for the display. This will be what allows us to have a great exhibit that can be properly interacted with by the visitors at the showcase. Finally, I will also be in charge of establishing communication between the spinning top and using Wifi capabilities. This is what will allow my system to receive the speed data and possibly send out data to control the top.
 
 | Module         | # Available | Needed | Associated Pins                                                    |
 |----------------|-------------|--------|--------------------------------------------------------------------|
@@ -93,3 +93,16 @@ Overall, the ESP32 works wonderfully as a microcontroller for my system. It fulf
 Power Budget:
 
 [Spreadsheet Link](https://github.com/ibmyers2/EGR314_Team309_IBM/raw/refs/heads/main/EGR314%20Power%20Budget%20IBM.xlsx)
+
+Major Component Selection:
+
+| Component         | Optimal Selection                                                                                                          |
+|-------------------|----------------------------------------------------------------------------------------------------------------------------|
+| Microcontroller   | ESP32-S3-WROOM-1-N4                                                                                                        |
+| OLED Screen       | Teyleten Robot 0.96 inch LCD OLED Display Board Module 12864 128X64 IIC I2C SSD1306 Driver 4 Pins for Raspberry Pi Arduino |
+| Power Supply      | 1300mAh High-Capacity Lithium-Ion Long-Lasting 9-Volt Batteries                                                            |
+| Voltage Regulator | LM2675MX-3.3/NOPB                                                                                                          |
+
+## Major Component Decision Making Process
+
+The ESP was a very simple decision for the microcontroller, since it had the proper I2C communication, Wifi communication, and more than enough GPIO pins. The OLED screen was a choice I made since it was one I was familiar with and would be able to properly display the required information, as well as not requiring very much current. The Power supply was selected for its cost-friendly price, as well as being reuseable and having more than enough current to supply the entire circuit. Finally, the voltage regulator was selected since it would be easier to solder, as well as meeting all other requirements for a voltage regulator.
