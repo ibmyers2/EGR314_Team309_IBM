@@ -1,10 +1,10 @@
 Human Interface Schematic
 
-![Image](https://github.com/user-attachments/assets/c1e4c45d-be0a-451c-bd9e-a46856bc9e6f)
+![Image](https://github.com/user-attachments/assets/0f763069-f66c-4e2b-b766-f87e5867bc81)
 
-[PDF](https://github.com/user-attachments/files/19080059/EGR314Schem3.42.5.pdf)
+[PDF](https://github.com/user-attachments/files/20042755/EGR314_Final_Schematic.pdf)
 
-[ZIP File](https://github.com/ibmyers2/EGR314_Team309_IBM/raw/refs/heads/main/EGR314HI.zip)
+[ZIP File](https://github.com/user-attachments/files/20042926/EGR314_HMI.zip)
 
 Bill of Materials:
 
